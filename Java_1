@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите два целых числа:");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        if (a > b) {
+            System.out.println("a > b");
+        } else if (a < b) {
+            System.out.println("a < b");
+        } else {
+            System.out.println("a = b");
+        }
+        int summ = a + b;
+        int subtract = a - b;
+        int division = a / b;
+        int multiplicat = a * b;
+        System.out.println("\nСумма: " +  summ);
+        System.out.println("\nРазность: " + subtract);
+        System.out.println("\nЧастное: " + division);
+        System.out.println("\nПроизведение: " + multiplicat);
+    }
+}
