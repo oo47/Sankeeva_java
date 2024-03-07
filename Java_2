@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите два целых числа:");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        if (a > b) {
+            System.out.println("\\Строки неидентичны: a > b");
+        } else if (a < b) {
+            System.out.println("\\Строки неидентичны: a < b");
+        } else {
+            System.out.println("\\Строки идентичны: a = b");
+        }
+        System.out.println(a == b);
+
+    }
+}
